@@ -7,6 +7,7 @@ body{
 }
 
 .wrapper{
+	margin: 10px;
 	max-width: 800px;
 	background: lightgray;
 	margin: auto;
@@ -39,3 +40,16 @@ img{
 #green{
 	background: green;
 }
+
+.float {
+	width: 25%;
+	float: left;
+	padding: 10px;
+}
+
+.clear::after {
+	content: "Das sind vier schöne Tiere!";
+	display: block;
+	clear: both;
+}
+/*::after ist Hilfselement: alles, was hinter der Kategorie "clear" kommt, wird gecleared und als Block behandelt */
